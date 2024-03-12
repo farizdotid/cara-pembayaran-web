@@ -1,8 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-import vercel from "@astrojs/vercel/serverless";
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [starlight({
@@ -34,7 +32,5 @@ export default defineConfig({
         link: '/guides/cimb/'
       }]
     }]
-  })],
-  output: "server",
-  adapter: vercel()
+  })]
 });
